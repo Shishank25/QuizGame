@@ -1,0 +1,54 @@
+button {
+    background-color: #dc9f3d;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    position: relative;
+
+    box-shadow: 0 10px 0px #b8832f, 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: perspective(100px) translateY(5px);
+
+    &:hover {
+        transform: perspective(100px) translateY(15px); /* Slight lift */
+        box-shadow: 0 2px 0px #b8832f, 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+button::after {
+    position: absolute;
+    content: '☆';
+    color: rgb(255, 115, 115);
+    font-size: 18px;
+    top: 50%;
+    left: 100%;
+    opacity: 0;
+    transform: translate(-30px, -20%) rotate(0) scale(1);
+    transition: transform 0.5s ease-in-out, opacity 0.2s ease-in;
+}
+
+button:hover::after {
+    transform: translate(20px, -50%) rotate(100deg) scale(1.5);
+    opacity: 1;
+}
+button::before {
+    position: absolute;
+    content: '▲';
+    color: rgb(187, 226, 30);
+    font-size: 18px;
+    top: 50%;
+    left: 0%;
+    opacity: 0;
+    transform: translate(0, 0) rotate(0) scale(1);
+    transition: transform 0.5s ease-in-out, opacity 0.2s ease-in;
+}
+
+button:hover::before {
+    transform: translate(-30px, -50%) rotate(150deg) scale(1.5);
+    opacity: 1;
+}
+
