@@ -1,0 +1,30 @@
+*{
+    color: antiquewhite;
+    background-color: #09122C;
+    font-family: "Fira Sans", serif;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+
+    .game{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-right: 5%;
+    }
+
+}
+
+.theme-button{
+    margin-top: 20px;
+    width: 80px;
+    align-self: flex-start;
+    margin-right: 3%;
+}

@@ -22,8 +22,8 @@ const Questionaire = ({questions, name}) => {
     {
       page > 9 ? (<GameOver score={score} name={name}/>) : 
           (<>
-              <div className='flex flex-col items-center w-250 mt-10 z-3'>
-                 
+              <div className='flex flex-col items-center w-250 mt-10 z-3'>  
+                 <button onClick={() => {setPage(10)}}className='z-10' >debugg</button>
                   <QuesionCard 
                       page={page}
                       setPage={setPage}

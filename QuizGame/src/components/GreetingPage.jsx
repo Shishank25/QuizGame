@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react'
-import './GreetingPage.scss'
+import '../styles/GreetingPage.scss'
 
 
 const GreetingPage = ({setStart, name, setName}) => {
@@ -33,8 +33,8 @@ const GreetingPage = ({setStart, name, setName}) => {
 
   return (
     
-        <div className='flex flex-col justify-center items-center'>
-            <form action="" className='flex flex-col w-40'>
+        <div className='first-page'>
+            <form action="" className='input-form'>
             
                 <input 
                   type="text" 

@@ -88,7 +88,7 @@ const QuesionCard = ({ page, setPage, question, solution, options, score, setSco
 
         <form onSubmit={handleSubmit} className='flex flex-col w-100 justify-evenly '>
 
-            <label htmlFor="" className='w-full mb-9'>Q{page+1}: <span className='ml-2'>{question}</span></label>
+            <label htmlFor="" className='w-full mb-9'>Q{page+1}: <span className='ml-2 text-2xl'>{question}</span></label>
 
             <div>
             {

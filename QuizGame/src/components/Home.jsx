@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.scss'
+import '../styles/Home.scss'
 
 const Home = () => {
   
@@ -7,9 +7,9 @@ const Home = () => {
 
   return (
     <>
-        <div className='flex flex-col justify-center w-full'>
-            <div className='pb-5 text-5xl h-50 flex flex-col items-center'>
-              <img src="/logo1.png" alt="QuizLogo" className='h-90 bg-transparent'/>
+        <div className='main-outer'>
+            <div className='main-inner text-5xl'>
+              <img src="/logo1.png" alt="QuizLogo" className='banner bg-transparent'/>
             </div>
         </div>
     </>

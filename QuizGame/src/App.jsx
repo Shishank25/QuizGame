@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import './App.scss'
 import Home from './components/Home'
 import GreetingPage from './components/GreetingPage'
 import axios from 'axios'
@@ -19,11 +19,9 @@ function App() {
   const [start, setStart] = useState(false);
 
 
-//---Load Theme Song;
-  const audio = new Audio('/theme.mp3');
-  audio.loop = false;
-  audio.volume = 0.1;
-
+//---Store Theme Song;
+  const [themeSong, setThemeSong] = useState(null);
+  
 
 //---Function to fetch API;
   const fetchApi = async () => {
@@ -34,6 +32,11 @@ function App() {
 //---Fetch the API on first render, and if data gets updated, then store the necessary information; 
   useEffect(() => {
     fetchApi();
+
+    const audio = new Audio('/theme.mp3');
+    audio.loop = false;
+    audio.volume = 0.1;
+    setThemeSong(audio);
   },[])
 
   useEffect(() => {
@@ -52,15 +55,15 @@ function App() {
 //---Function to play/pause the music;
   const playTheme = () => {
     
-    if(audio.paused){audio.play()}
-    else{audio.pause()}
+    if(themeSong.paused){themeSong.play()}
+    else{themeSong.pause()}
 
   }
 
   return (
-    <>
-        <button className='ml-5 mt-5 absolute' onClick={playTheme}>Song</button>
-        <div className="game flex flex-col items-center h-1000px">
+    <div className='main-page'>
+        <button className='theme-button' onClick={playTheme}>Song</button>
+        <div className="game">
 
             <Home />
             {
@@ -74,7 +77,7 @@ function App() {
             }
 
         </div>
-    </>
+    </div>
   )
 }
 

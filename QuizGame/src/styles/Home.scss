@@ -1,0 +1,21 @@
+.banner{
+    transform: translateY(-90px);
+    height: 360px;
+}
+div{
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-outer{
+    justify-content: center;
+    width: 100%;
+}
+
+.main-inner{
+    align-items: center;
+    height: 200px;
+    padding-bottom: 20px;
+}
+

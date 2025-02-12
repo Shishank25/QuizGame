@@ -8,6 +8,8 @@ transition: transform 0.5s ease-in-out, opacity 0.5s;
         padding: 20px;
         background-color: #3674B5;
         z-index: 5;
+        height: 500px;
+        width: 800px;
         div, label, span{
             background-color: transparent;
         }

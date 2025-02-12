@@ -1,7 +1,27 @@
+.first-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 160px;
+        height: 200px;
+
+        input{
+            outline: none;
+        }
+    }
+}
+
 button {
+    scale: 1;
     background-color: #dc9f3d;
     color: black;
-    padding: 8px 16px;
+    padding: 6px 12px;
     border-radius: 20px;
     font-weight: 600;
     font-size: 16px;

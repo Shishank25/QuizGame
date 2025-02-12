@@ -1,14 +1,42 @@
 .gameOver{
-    transform: translateY(-20%);
+    // transform: translateY(-20%);
+    background-color: transparent;
 }
 img{
     background-color: transparent;
 }
 .result{
     background-color: transparent;
-    transform: translateY(-300%);
+    // transform: translateY(-300%);
+}
+
+.screen{
+    flex-direction: row-reverse;
+    background-color: transparent;
 }
 
 .score{
     scale: 1.2;
+}
+#restart{
+    padding: 0;
+    width: 85px;
+}
+a{
+    padding: 10px;
+    font-size: larger;
+    background-color: transparent;
+    height: 35px;
+    width: 85px;
+}
+.leaderboards{
+    margin-top: 50px;
+    background-color: black;
+    border-radius: 20px;
+
+    *{
+        color: rgb(223, 223, 59);
+        background-color: transparent;
+    }
+
 }
