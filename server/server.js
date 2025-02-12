@@ -4,7 +4,7 @@ import cors from 'cors';
 const app = express();
 
 const corsOPtions = {
-    origin: ["https://quiz-game-app-five.vercel.app", ],
+    origin: ["https://quiz-game-app-shishank-shekhers-projects.vercel.app/", ],
 }
 
 app.use(cors(corsOPtions));
