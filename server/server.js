@@ -11,6 +11,9 @@ const corsOPtions = {
 app.use(cors());
 app.use(express.json());
 
+app.get("/", ( req, res ) => {
+    res.json("Hello!");
+})
 
 app.get("/api", (req, res) => {
     res.json({ fruits: ["apple", "banana", "cherry"] });
