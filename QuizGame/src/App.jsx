@@ -25,7 +25,7 @@ function App() {
 
 //---Function to fetch API;
   const fetchApi = async () => {
-    const respone = await axios.get('http://localhost:8080/proxy');
+    const respone = await axios.get('https://quiz-game-o7z2l6o37-shishank-shekhers-projects.vercel.app/proxy');
     setData(respone.data);
   }
 
