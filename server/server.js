@@ -3,11 +3,11 @@ import cors from 'cors';
 
 const app = express();
 
-// const corsOPtions = {
-//     origin: ["http://localhost:5173", ],
-// }
+const corsOPtions = {
+    origin: ["https://quiz-game-app-five.vercel.app", ],
+}
 
-app.use(cors());
+app.use(cors(corsOPtions));
 app.use(express.json());
 
 app.get("/", ( req, res ) => {
