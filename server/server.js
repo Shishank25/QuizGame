@@ -1,12 +1,11 @@
 import express from 'express';
 import cors from 'cors';
-import axios from 'axios';
 
 const app = express();
 
-const corsOPtions = {
-    origin: "http://localhost:5173",
-}
+// const corsOPtions = {
+//     origin: ["http://localhost:5173", ],
+// }
 
 app.use(cors());
 app.use(express.json());
@@ -30,6 +29,8 @@ app.get("/proxy", async (req, res) => {
       }
 });
 
-app.listen(8080, () => {
-    console.log("Server Started on port 8080")
-})
+// app.listen(8080, () => {
+//     console.log("Server Started on port 8080")
+// })
+
+export default app;
